@@ -1,0 +1,134 @@
+body {
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  padding-bottom: 15%;
+  /*background-color: gray;*/
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 5%;
+}
+footer {
+	text-transform: uppercase;
+	background-color: #28cbd4;
+  height: 5%;
+  padding-top: 5%;
+  width: 100%;
+	color: #000;
+	font-size: 30px;
+	letter-spacing: .08em;
+	font-weight: 500;
+	text-align: right;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000000;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 2%;
+  display: inline;
+}
+
+/*ALL PAGES*/
+.main-menu {
+  display: flex;
+  font-size: 40px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/*FOOTER*/
+
+.footer-links{
+  align-content: flex-start;
+  text-align: left;
+  flex-grow: 2;
+  margin-left: 5%;
+}
+.byline{
+  align-content: flex-end;
+  flex-grow: 1;
+  margin-right: 5%;
+}
+
+.name {
+	color: #fff;
+}
+
+.hearts {
+  color: #EB4962;
+}
+
+/*HOMEPAGE*/
+.headline {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.headline img {
+  width: 60%;
+  position: absolute;
+  z-index: -1000;
+  /*margin: 2%;*/
+}
+.lizardbird {
+  font-size: 90px;
+  font-weight: bold;
+  position: relative;
+  z-index: -1000;
+  padding-bottom: 4%;
+}
+.home-menu {
+  margin: 5% 0% 0% 0%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-top: 40%;
+}
+.content {
+  position: relative;
+  z-index: -1000;
+}
+.home-menu a {
+  padding: 0 5%;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.3em;
+  margin: 0% 0% 2% 0%;
+}
+.home {
+  background-color: #28cbd4;
+}
+.about {
+  background-color: #a37de8;
+}
+.portfolio {
+  background-color: #3da4b3;
+}
+.resume {
+  background-color: #3db33d;
+}
+.blog {
+  background-color: #e93f53;
+}
+.contact {
+  background-color: #e9b33f;
+}
