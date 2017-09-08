@@ -4,27 +4,77 @@
     <meta charset="utf-8">
     <title>& Liz Creates</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/ec1388867e.js"></script>
     <script type="text/javascript" src="js/dropdown.js"></script>
+    <script type="text/javascript" src="js/toggle.js"></script>
   </head>
   <body>
-  <div class="title about">
+  <div class="about">
     <div class="dropdown">
-      <button onclick = "dropdown()" class="dropbutton">ABOUT v</button>
+      <button onclick = "dropdown()" class="dropbutton"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
       <div id="dropdown" class="dropdown-content">
-        <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-        <a class="home" href="index.html">home</a>
+        <input type="text" placeholder="     Search..." id="myInput" onkeyup="filterFunction()">
         <a class="about" href="about.html">about</a>
         <a class="portfolio" href="portfolio.html">portfolio</a>
         <a class="resume" href="resume.html">resume</a>
         <a class="blog" href="blog.html">blog</a>
         <a class="contact" href="contact.html">contact</a>
+        <a class="home" href="index.html">home</a>
+      </div>
+      <span class="title">ABOUT</span>
+    </div>
+  </div>
+  <main>
+    <div class="toggle">
+      <h1>TL;DR</h1>
+      <label class="switch">
+        <input id="toggleButton" onclick="toggle()" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <h1>Verbose</h1>
+    </div>
+    <div class="intro">
+      full-stack developer <br> design thinker <br> business strategist<br><br>
+      Here to code a better future.
+    </div>
+    <div class="tldr" id="tldr-box">
+      <div class="about content-title">I can help you:</div>
+      <div class="content-row">
+          <div class="item">
+            <img src="images/coding.png" alt=""><br>
+            Build responsive sites and apps
+          </div>
+          <div class="item">
+            <img src="images/empathy.png" alt=""><br>
+            Create empathy-driven user experiences
+          </div>
+          <div class="item">
+            <img src="images/manage.png" alt=""><br>
+            Manage products, people, and programs
+          </div>
+      </div>
+      <div class="about content-title">I like to:</div>
+      <div class="content-row">
+          <div class="item">
+            <img src="images/brain.png" alt=""><br>
+            Read, watch, and listen to things
+          </div>
+          <div class="item">
+            <img src="images/travel.png" alt=""><br>
+            Explore international destinations and national parks
+          </div>
+          <div class="item">
+            <img src="images/dog.png" alt=""><br>
+            Hang out with my husband, Mike, and our dog, Juneau
+          </div>
       </div>
     </div>
-
-  </div>
-  <main class="content">
-    <h2>Advisor turned developer. Here to code a better future.</h2>
-    <p>I spent the first decade of my career evolving from web designer to digital marketing consultant and then to executive advisor focused on creating a better future with tech. However, I missed building solutions with nothing more than my hands, a keyboard, and a natural propensity for lifelong learning.</p>
-    <p>General Assembly's full stack Web Development Immersive was the best way for me to quickly return to my technical roots and get up-to-speed on the latest methodologies and frameworks. I now spend my free time experimenting with Three.js, completing kata on CodeWars and dreaming about bug fixes.</p>
-    <p>My background has given me skills</p>
+    <div class="verbose" id="verbose-box">
+      <p>I started my own business in college and spent a decade evolving from freelance web designer to digital marketing manager to executive advisor at a firm founded by futurists. The work was challenging, impactful, and prestigious, but ultimately I missed taking ideas from concept to reality with nothing more than a few sketches, a keyboard, and a natural propensity for lifelong learning.</p>
+      <p>So I quit my job, went to code school at General Assembly, and now I build responsive sites and apps. Because of my background, I can also create empathy-driven user experiences and manage people, products, and programs. The balance of art and science involved in creating digital experiences allows me to use my natural creativity, work with a variety of teams and skillsets, and engineer solutions at the same time. This career pivot was the best decision I've ever made!</p>
+      <p>When I'm not debugging code or organizing my Trello board, you can find me hanging with my husband, Mike, and our dog, Juneau, planning a trip to an international destination or National Park, reading books, watching Netflix and HBO, or listening to my latest downloads on PocketCast and Audible.</p>
+      <p>Wanna work together? Drop me a line!</p>
+    </div>
   </main>
+</body>
+</html>
