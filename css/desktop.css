@@ -1,0 +1,87 @@
+@media only screen and (min-width: 769px)  {
+  body {
+    font-size: 20px;
+  }
+  footer {
+    height: 2%;
+    padding: 2%;
+    font-size: 18px;
+    /*align-items: center;*/
+  }
+  .headline img {
+    width: 400px;
+    position: absolute;
+    z-index: -1000;
+  }
+  .home-menu {
+    margin-top: 10%;
+  }
+  .content {
+    margin-top: 5%;
+    padding-top: 2%;
+  }
+  .title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5%;
+    align-items: center;
+  }
+
+  /*DROPDOWN MENU*/
+  .dropbutton {
+    font-size: 30px;
+  }
+  .dropdown-content {
+    font-size: 20px;
+    min-width: 250px;
+  }
+  .dropdown a:hover {background-color: #ddd; color: #000;}
+
+  .show {display:block;}
+
+  #myInput {
+    width: 250px;
+    background-size: 5%;
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    padding: 14px 20px 12px 100px;
+    border: none;
+  }
+
+/*Main Content*/
+h1 {
+  font-size: 26px;
+}
+  .intro {
+    font-size: 26px;
+  }
+  .tldr {
+    font-size: 18px;
+  }
+  .item img {
+    width: 30%;
+  }
+  .verbose {
+    font-size: 24px;
+    line-height: 2em;
+    padding-top: 5%;
+  }
+  #tldr-box{
+    display: block;
+  }
+  #verbose-box {
+    display: none;
+  }
+  .round-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 15%;
+  }
+  .byline{
+    text-align: center;
+  }
+
+}

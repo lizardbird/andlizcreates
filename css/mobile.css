@@ -14,7 +14,7 @@ footer {
 	text-transform: uppercase;
 	background-color: #93c0c2;
   height: 5%;
-  padding-top: 4%;
+  padding: 2%;
   width: 100%;
 	color: #000;
 	font-size: 12px;
@@ -25,12 +25,7 @@ footer {
   display: flex;
   justify-content: space-between;
   z-index: 1000000;
-}
-@media only screen and (max-width: 350px)  {
-  footer {
-    font-size: 10px;
-    text-align: right;
-  }
+  align-items: center;
 }
 
 footer a {
@@ -43,6 +38,7 @@ h1 {
   padding: 2%;
   display: inline;
   text-align: center;
+  font-size: 22px;
 }
 
 p {
@@ -59,19 +55,19 @@ p {
 }
 .title {
   color: #fff;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 5%;
 }
 .intro {
-  font-size: 50px;
+  font-size: 20px;
   font-weight:  bold;
   text-align: center;
-  padding-top: 2%;
+  /*padding-top: 2%;*/
   color: gray;
 }
 .tldr {
-  font-size: 35px;
+  font-size: 14px;
   font-weight:  bold;
   padding-top: 2%;
   display: flex;
@@ -96,11 +92,11 @@ p {
 }
 .item img {
   margin-bottom: 5%;
+  width: 50%;
 }
 .verbose {
-  font-size: 24px;
-  line-height: 2em;
-  padding-top: 5%;
+  font-size: 18px;
+  /*padding-top: 5%;*/
 }
 #tldr-box{
   display: block;
@@ -147,7 +143,6 @@ p {
   width: 60%;
   position: absolute;
   z-index: -1000;
-  /*margin: 2%;*/
 }
 .lizardbird {
   font-size: 40px;
@@ -171,6 +166,7 @@ p {
 .content {
   position: relative;
   z-index: -1000;
+  background-color: #fff;
 }
 .home-menu a {
   padding: 0 5%;
@@ -208,9 +204,9 @@ p {
 /*DROPDOWN MENU*/
 .dropbutton {
   background-color: Transparent;
-  font-size: 60px;
+  font-size: 30px;
   color: #fff;
-  padding: 16px;
+  padding: 10px;
   border: none;
   cursor: pointer;
 }
@@ -220,10 +216,10 @@ p {
 }
 
 .dropdown-content {
-  font-size: 45px;
+  font-size: 20px;
   display: none;
   position: absolute;
-  min-width: 500px;
+  min-width: 200px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
   z-index: 1;
@@ -238,19 +234,17 @@ p {
   display: block;
 }
 
-.dropdown a:hover {background-color: #ddd}
-
 .show {display:block;}
 
 #myInput {
   border-box: box-sizing;
-  width: 500px;
+  width: 200px;
   height: 1.5em;
   background-image: url('../images/searchicon.png');
   background-size: 10%;
   background-position: 14px 12px;
   background-repeat: no-repeat;
-  font-size: 40px;
+  font-size: 20px;
   padding: 14px 20px 12px 100px;
   border: none;
 }
@@ -265,8 +259,8 @@ p {
 .switch {
   position: relative;
   display: inline-block;
-  width: 120px;
-  height: 68px;
+  width: 60px;
+  height: 34px;
 }
 
 .switch input {display:none;}
@@ -286,10 +280,10 @@ p {
 .slider:before {
   position: absolute;
   content: "";
-  height: 60px;
-  width: 60px;
-  left: 4px;
-  bottom: 4px;
+  height: 30px;
+  width: 30px;
+  left: 2px;
+  bottom: 2px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -304,9 +298,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(52px);
-  -ms-transform: translateX(52px);
-  transform: translateX(52px);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 /* Rounded sliders */
@@ -316,4 +310,13 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+/*For iphone5 or smaller*/
+@media only screen and (max-width: 350px)  {
+  footer {
+    font-size: 10px;
+    text-align: right;
+  }
 }
