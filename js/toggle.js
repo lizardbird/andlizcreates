@@ -20,4 +20,5 @@ function toggle () {
     verbose.style.display = 'block'
     tldr.style.display = 'none'
   }
+
 }

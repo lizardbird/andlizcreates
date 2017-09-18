@@ -1,4 +1,4 @@
-body {
+@media only screen and (max-width: 899px)  {body {
   margin: 0 auto;
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -18,7 +18,7 @@ footer {
 	font-size: 12px;
 	letter-spacing: .08em;
 	font-weight: 500;
-  position: static;
+  /*position: fixed;*/
   bottom: 0px;
   display: flex;
   justify-content: space-between;
@@ -103,11 +103,13 @@ p {
   font-size: 18px;
 }
 #tldr-box{
-  display: block;
+  display: flex;
+  position: relative;
 }
 #verbose-box {
   display: none;
   padding: 4%;
+
 }
 
 /*FOOTER*/
@@ -137,6 +139,7 @@ p {
   width: 60%;
   position: absolute;
   z-index: -1000;
+  margin-bottom: 5%;
 }
 .lizardbird {
   font-size: 40px;
@@ -159,6 +162,7 @@ p {
 }
 .content {
   padding: 5%;
+  margin-top: 5%;
 }
 .home-menu a {
   padding: 0 5%;
@@ -213,6 +217,7 @@ p {
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-right: 2%;
 }
 
 .dropdown-content {
@@ -345,6 +350,7 @@ input:checked + .slider:before {
 .project-deets {
   list-style: none;
   padding: 0;
+  font-size: 16px;
 }
 .project-deets li {
   padding: 2%;
@@ -356,12 +362,21 @@ input:checked + .slider:before {
 .plain {
   text-decoration: none;
 }
+.introRound {
+  display: none;
+}
+}
 
 /*For iphone5 or smaller*/
-@media only screen and (max-width: 350px)  {
+@media only screen and (max-width: 360px)  {
+  body {
+    padding-bottom: 15%;
+  }
   footer {
+    height: 8vh;
     font-size: 9px;
     text-align: right;
+    background-color: #fff;
   }
   .byline{
     align-content: flex-end;
