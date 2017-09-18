@@ -11,7 +11,8 @@
     <script type="text/javascript" src="js/toggle.js"></script>
   </head>
   <body>
-  <div class="portfolio">
+  <div class="portfolio navbar">
+    <span class="title">PORTFOLIO</span>
     <div class="dropdown">
       <button onclick = "dropdown()" class="dropbutton"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
       <div id="dropdown" class="dropdown-content">
@@ -19,15 +20,93 @@
         <a class="about" href="about.html">about</a>
         <a class="portfolio" href="portfolio.html">portfolio</a>
         <a class="resume" href="resume.html">resume</a>
-        <a class="blog" href="blog.html">blog</a>
         <a class="contact" href="contact.html">contact</a>
         <a class="home" href="index.html">home</a>
       </div>
-      <span class="title">PORTFOLIO</span>
     </div>
   </div>
-  <main>
-
+  <main class="gray">
+    <div class="projects-box">
+      <div class="card">
+        <a class="plain" href="http://www.placeholder.com">
+        <div class="project-title">
+          <img class="round-img" src="images/geopic.png" alt="geopic">
+          <span>GEOPIC PHOTO MAPPER</span>
+        </div>
+        </a>
+        <ul class="project-deets">
+          <li>A global photo mapper that allows users to explore the world through photos. Upload and filter images, tag the place where the photo was taken, and see your photo plotted on a Google Map.</li>
+          <li><b>Tech:</b> MongoDB, Express, React with Redux, Node.js, Google Places API, Filestack API + Custom Uploader, Three.js</li>
+          <li><b>Features:</b> Upload, crop, rotate, and filter photos, geotagging with Google Places search, additional details form, redux fetch photos from backend API, plot by latitude and longitude on Google Maps</li>
+        </ul>
+        <div class="project-links">
+          <a href="">Live Site</a>
+          <a href="">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="card">
+        <a class="plain" href="https://jdpolakoff.github.io/museogramFrontEnd/#/museums">
+        <div class="project-title">
+          <span>MUSEOGRAM</span>
+          <img class="round-img" src="images/museogram.png" alt="ramen">
+        </div>
+        </a>
+        <ul class="project-deets">
+          <li>This single page web app allows users to explore The Met's open collection of artworks. In less than a week, our team of 3 seeded a back-end API with thousands of artworks and built the complete front-end interface.</li>
+          <li><b>Tech:</b> AngularJS, Ruby on Rails, The Met API, PostgreSQL, JavaScript, Masonry Display, and Bootstrap CSS</li>
+          <li><b>Features:</b> Filter art by category, search thousands of artworks by keyword, "View More" button to prevent infinite scroll, loading screen, view/add reviews to art</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://jdpolakoff.github.io/museogramFrontEnd/#/museums">Live Site</a>
+          <a href="https://github.com/jdpolakoff/museogramFrontEnd">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="card">
+        <a class="plain" href="http://ramen-shaman.herokuapp.com/">
+        <div class="project-title">
+          <img class="round-img" src="images/ramen.png" alt="ramen">
+          <span>RAMEN SHAMAN</span>
+        </div>
+        </a>
+        <ul class="project-deets">
+          <li>Use this app to track your favorite bowls of ramen, find new ramen shops in DC, and explore your favorite ingredients!</li>
+          <li><b>Tech:</b> Ruby on Rails, Yelp Fusion API, and PostgreSQL</li>
+          <li><b>Features:</b> Full CRUD functionality for 7 data models, user sign-up and authentication, custom profiles and favorites lists, mobile-first design</li>
+        </ul>
+        <div class="project-links">
+          <a href="http://ramen-shaman.herokuapp.com/">Live Site</a>
+          <a href="https://github.com/lizardbird/wdi-proj2-ramen-shaman">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="card">
+        <a class="plain" href="https://lizardbird.github.io/wdi-proj1-trivia/">
+        <div class="project-title">
+          <span>WOTTER YOU KNOW?</span>
+          <img class="round-img" src="images/otter.png" alt="otter">
+        </div>
+        </a>
+        <ul class="project-deets">
+          <li>Play this interactive trivia game to test your knowledge of otter facts!</li>
+          <li><b>Tech:</b> HTML, CSS, and JavaScript</li>
+          <li><b>Features:</b> Randomized selection of questions, timer-based scoring, and responsive design</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://lizardbird.github.io/wdi-proj1-trivia/">Live Site</a>
+          <a href="https://github.com/lizardbird/wdi-proj1-trivia">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
   </main>
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/lizardbird/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/AndLizSays"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/eghelms/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/andlizsees/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <div class="byline">
+      Made with <span class = "hearts">&hearts;</span> by <span class="name">Liz Jewell</span>
+    </div>
+  </footer>
 </body>
 </html>

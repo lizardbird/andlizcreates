@@ -2,25 +2,23 @@ body {
   margin: 0 auto;
   font-family: Raleway, sans-serif;
   font-size: 16px;
-  padding-bottom: 15%;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 main {
   display: flex;
   flex-direction: column;
-  padding: 0% 5%;
+  padding-bottom: 5%;
+  background-color: #e2e1e0;
 }
 footer {
 	text-transform: uppercase;
-	background-color: #93c0c2;
-  height: 5%;
-  padding: 2%;
+  height: 10vh;
   width: 100%;
 	color: #000;
 	font-size: 12px;
 	letter-spacing: .08em;
 	font-weight: 500;
-  position: fixed;
+  position: static;
   bottom: 0px;
   display: flex;
   justify-content: space-between;
@@ -39,11 +37,13 @@ h1 {
   display: inline;
   text-align: center;
   font-size: 22px;
+  margin: 0;
 }
 
 p {
-  text-indent: 50px;
   margin-bottom: 5%;
+  padding-left: 2%;
+  text-indent: 5%;
 }
 
 
@@ -57,14 +57,16 @@ p {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 5%;
 }
 .intro {
   font-size: 20px;
   font-weight:  bold;
   text-align: center;
-  /*padding-top: 2%;*/
   color: gray;
+}
+.center {
+  text-align: center;
+  font-weight: bold;
 }
 .tldr {
   font-size: 14px;
@@ -74,15 +76,18 @@ p {
   flex-direction: column;
 }
 .content-title {
-  line-height: 1.5em;
-  padding: 2%;
+  line-height: 2em;
   margin-top: 5%;
   margin-bottom: 5%;
-  display: block;
+  padding: 1%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
 }
 .content-row {
   display: flex;
-  width: 100%;
+  padding: 2%;
+  width: 96%;
   justify-content: space-between;
 }
 .item {
@@ -96,19 +101,13 @@ p {
 }
 .verbose {
   font-size: 18px;
-  /*padding-top: 5%;*/
 }
 #tldr-box{
   display: block;
 }
 #verbose-box {
   display: none;
-}
-.round-img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin-right: 15%;
+  padding: 4%;
 }
 
 /*FOOTER*/
@@ -124,11 +123,6 @@ p {
   flex-grow: 1;
   margin-right: 2%;
 }
-
-.name {
-	color: #fff;
-}
-
 .hearts {
   color: #c0528a;
 }
@@ -148,8 +142,8 @@ p {
   font-size: 40px;
   font-weight: bold;
   position: relative;
-  z-index: -1000;
   padding-bottom: 4%;
+  display: block;
 }
 .home-menu {
   margin: 5% 0% 0% 0%;
@@ -164,9 +158,7 @@ p {
   margin-bottom: 2%;
 }
 .content {
-  position: relative;
-  z-index: -1000;
-  background-color: #fff;
+  padding: 5%;
 }
 .home-menu a {
   padding: 0 5%;
@@ -202,6 +194,13 @@ p {
 }
 
 /*DROPDOWN MENU*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  height: 10vh;
+}
 .dropbutton {
   background-color: Transparent;
   font-size: 30px;
@@ -210,6 +209,7 @@ p {
   border: none;
   cursor: pointer;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -219,10 +219,11 @@ p {
   font-size: 20px;
   display: none;
   position: absolute;
-  min-width: 200px;
+  min-width: 40%;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.9);
   z-index: 1;
+  margin-left: -400%;
 }
 
 .dropdown-content a {
@@ -245,7 +246,7 @@ p {
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 20px;
-  padding: 14px 20px 12px 100px;
+  padding: 14px 20px 12px 50px;
   border: none;
 }
 
@@ -312,11 +313,62 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/*PORTFOLIO*/
+.projects-box {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  background-color: #fff;
+  padding: 5%;
+  margin: 5%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: flex;
+  flex-direction: column;
+}
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #459499;
+  padding: 2.5%;
+}
+.round-img {
+  border-radius: 50%;
+  width: 120px;
+  margin: 5%;
+  border: 3px solid #459499;
+}
+.project-deets {
+  list-style: none;
+  padding: 0;
+}
+.project-deets li {
+  padding: 2%;
+}
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+.plain {
+  text-decoration: none;
+}
 
 /*For iphone5 or smaller*/
 @media only screen and (max-width: 350px)  {
   footer {
-    font-size: 10px;
+    font-size: 9px;
     text-align: right;
   }
+  .byline{
+    align-content: flex-end;
+    text-align: center;
+    margin-right: 5%;
+    flex-wrap: wrap;
+    width: 15%;
+  }
+
 }
