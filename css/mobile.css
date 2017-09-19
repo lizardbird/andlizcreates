@@ -373,6 +373,14 @@ input:checked + .slider:before {
 .desktop-form {
   display: none;
 }
+#pdf {
+  width: 70%;
+}
+.pdfobject-container {
+  height: 700px;
+}
+.pdfobject { border: 1px solid #666; }
+
 }
 
 /*For iphone5 or smaller*/

@@ -385,9 +385,11 @@ input:checked + .slider:before {
 .mobile-form {
   display: none;
 }
-.pdf {
+#pdf {
   width: 70%;
-  min-height: 100vh;
+  height: 800px;
 }
+.pdfobject-container { height: 800px;}
+.pdfobject { border: 1px solid #666; }
 
 }
