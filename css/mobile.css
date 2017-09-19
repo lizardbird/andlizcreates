@@ -19,7 +19,6 @@ footer {
 	font-size: 12px;
 	letter-spacing: .08em;
 	font-weight: 500;
-  /*position: fixed;*/
   bottom: 0px;
   display: flex;
   justify-content: space-between;
