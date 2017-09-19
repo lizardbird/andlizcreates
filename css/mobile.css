@@ -9,7 +9,7 @@ main {
   flex-direction: column;
   padding-bottom: 5%;
   background-color: #e2e1e0;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 footer {
 	text-transform: uppercase;
