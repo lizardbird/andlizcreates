@@ -11,23 +11,39 @@
     <script type="text/javascript" src="js/toggle.js"></script>
   </head>
   <body>
-  <div class="resume">
+  <div class="resume navbar">
+    <span class="title">RESUME</span>
     <div class="dropdown">
       <button onclick = "dropdown()" class="dropbutton"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
       <div id="dropdown" class="dropdown-content">
         <input type="text" placeholder="     Search..." id="myInput" onkeyup="filterFunction()">
-        <a class="about" href="about.html">about</a>
-        <a class="portfolio" href="portfolio.html">portfolio</a>
-        <a class="resume" href="resume.html">resume</a>
-        <a class="blog" href="blog.html">blog</a>
-        <a class="contact" href="contact.html">contact</a>
-        <a class="home" href="index.html">home</a>
+          <a class="home" href="index.html">home</a>
+          <a class="about" href="about.html">about</a>
+          <a class="portfolio" href="portfolio.html">portfolio</a>
+          <a class="resume" href="resume.html">resume</a>
+          <a class="contact" href="contact.html">contact</a>
+
       </div>
-      <span class="title">RESUME</span>
     </div>
   </div>
-  <main>
+  <main class="gray">
+    <div class="top card pdf">
+      <object data="images/resume.pdf" type="application/pdf" width="100%" height="100%">
+        <p>Alternative text - include a link <a href="resume.pdf">to the PDF!</a></p>
+      </object>
+    </div>
 
   </main>
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/lizardbird/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/AndLizSays"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/eghelms/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/andlizsees/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <div class="byline">
+      Made with <span class = "hearts">&hearts;</span> by <span class="name">Liz Jewell</span>
+    </div>
+  </footer>
 </body>
 </html>

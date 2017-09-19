@@ -143,10 +143,11 @@ p {
 }
 .lizardbird {
   font-size: 40px;
+  line-height: 1.3em;
   font-weight: bold;
   position: relative;
-  padding-bottom: 4%;
   display: block;
+  text-align: center;
 }
 .home-menu {
   margin: 5% 0% 0% 0%;
@@ -176,22 +177,22 @@ p {
   margin: 0% 0% 2% 0%;
 }
 .home {
-  background-color: #93c0c2;
+  background-color: #acdd7b;
 }
 .about {
-  background-color: #626aad;
+  background-color: #f47264;
 }
 .portfolio {
-  background-color: #459499;
+  background-color: #7887d9;
 }
 .resume {
-  background-color: #719f3c;
+  background-color: #69b5f1;
 }
 .blog {
-  background-color: #d4746d;
+  background-color: #bc648b;
 }
 .contact {
-  background-color: #be9336;
+  background-color: #e5bb41;
 }
 .about, .portfolio, .resume, .blog, .contact, .home {
   color: #fff;
@@ -202,7 +203,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 2%;
+  padding-left: 5%;
   height: 10vh;
 }
 .dropbutton {
@@ -338,14 +339,14 @@ input:checked + .slider:before {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  color: #459499;
+  color: #7887d9;
   padding: 2.5%;
 }
 .round-img {
   border-radius: 50%;
   width: 120px;
   margin: 5%;
-  border: 3px solid #459499;
+  border: 3px solid #7887d9;
 }
 .project-deets {
   list-style: none;
@@ -365,13 +366,18 @@ input:checked + .slider:before {
 .introRound {
   display: none;
 }
+.top {
+  align-self: center;
+  text-align: center;
+}
+.desktop-form {
+  display: none;
+}
 }
 
 /*For iphone5 or smaller*/
 @media only screen and (max-width: 360px)  {
-  body {
-    padding-bottom: 15%;
-  }
+
   footer {
     height: 8vh;
     font-size: 9px;

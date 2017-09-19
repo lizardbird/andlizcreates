@@ -11,23 +11,38 @@
     <script type="text/javascript" src="js/toggle.js"></script>
   </head>
   <body>
-  <div class="contact">
+  <div class="contact navbar">
+    <span class="title">CONTACT</span>
     <div class="dropdown">
       <button onclick = "dropdown()" class="dropbutton"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
       <div id="dropdown" class="dropdown-content">
         <input type="text" placeholder="     Search..." id="myInput" onkeyup="filterFunction()">
-        <a class="about" href="about.html">about</a>
-        <a class="portfolio" href="portfolio.html">portfolio</a>
-        <a class="resume" href="resume.html">resume</a>
-        <a class="blog" href="blog.html">blog</a>
-        <a class="contact" href="contact.html">contact</a>
-        <a class="home" href="index.html">home</a>
+          <a class="home" href="index.html">home</a>
+          <a class="about" href="about.html">about</a>
+          <a class="portfolio" href="portfolio.html">portfolio</a>
+          <a class="resume" href="resume.html">resume</a>
+          <a class="contact" href="contact.html">contact</a>
+
       </div>
-      <span class="title">CONTACT</span>
     </div>
   </div>
-  <main>
+  <main class="gray">
+    <div class="top card">
+      <iframe class="desktop-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfvs8H15Rj05QV_MEKorgSCLrVyhhEQMkNXGZGPXjiQ2gYWXg/viewform?embedded=true"  width="800" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <iframe class="mobile-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfvs8H15Rj05QV_MEKorgSCLrVyhhEQMkNXGZGPXjiQ2gYWXg/viewform?embedded=true" width="300" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
 
   </main>
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/lizardbird/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/AndLizSays"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/eghelms/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/andlizsees/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <div class="byline">
+      Made with <span class = "hearts">&hearts;</span> by <span class="name">Liz Jewell</span>
+    </div>
+  </footer>
 </body>
 </html>

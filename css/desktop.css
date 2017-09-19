@@ -44,7 +44,7 @@ h1 {
 }
 
 p {
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
   padding-left: 2%;
   text-indent: 5%;
 }
@@ -157,8 +157,9 @@ p {
   font-size: 40px;
   font-weight: bold;
   position: relative;
-  padding-bottom: 4%;
   display: block;
+  text-align: center;
+  line-height:  1.3em;
 }
 .home-menu {
   margin: 5% 0% 0% 0%;
@@ -187,22 +188,22 @@ p {
   margin: 0% 0% 2% 0%;
 }
 .home {
-  background-color: #93c0c2;
+  background-color: #acdd7b;
 }
 .about {
-  background-color: #626aad;
+  background-color: #f47264;
 }
 .portfolio {
-  background-color: #459499;
+  background-color: #7887d9;
 }
 .resume {
-  background-color: #719f3c;
+  background-color: #69b5f1;
 }
 .blog {
-  background-color: #d4746d;
+  background-color: #bc648b;
 }
 .contact {
-  background-color: #be9336;
+  background-color: #e5bb41;
 }
 .about, .portfolio, .resume, .blog, .contact, .home {
   color: #fff;
@@ -343,7 +344,7 @@ input:checked + .slider:before {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  color: #459499;
+  color: #7887d9;
   padding: 2.5%;
 }
 .project {
@@ -353,7 +354,7 @@ input:checked + .slider:before {
   border-radius: 50%;
   width: 180px;
   margin: 5%;
-  border: 3px solid #459499;
+  border: 3px solid #7887d9;
 }
 .project-deets {
   list-style: none;
@@ -375,9 +376,18 @@ input:checked + .slider:before {
   width: 120px;
 }
 .top {
-  width: 70%;
   align-self: center;
   text-align: center;
+}
+.top b{
+  color: #7887d9;
+}
+.mobile-form {
+  display: none;
+}
+.pdf {
+  width: 70%;
+  min-height: 100vh;
 }
 
 }
