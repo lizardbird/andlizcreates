@@ -188,13 +188,15 @@ background-color: rgba(192, 202, 51, 0.65);
 #projects .card.large {
 	width: 400px;
 }
+.card-action .btn-floating {
+  margin: 1%;
+}
 .card .role {
 	font-size: 1.25rem;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-
 .card a {
 	margin-right: 0;
 }
@@ -235,6 +237,9 @@ background-color: rgba(192, 202, 51, 0.65);
 }
 #experience .card .col.s12.m2 a img {
   max-height: 60px;
+}
+.card-action {
+  vertical-align: bottom;
 }
 .card-action span {
 	font-size: 85%;
