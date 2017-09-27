@@ -47,7 +47,7 @@ ul.side-nav.fixed a {
 	color: #444;
 	display: block;
 	line-height: 100%;
-	padding: 10px 0 10px;
+	padding: 10px 10px 0 10px;
 	align-items: center;
 }
 ul.table-of-contents li.logo a.active,
