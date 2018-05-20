@@ -301,7 +301,7 @@ a.hoverline:hover {
 }
 .skill {
   max-height: 100px;
-  padding-bottom: 10%;
+  margin-bottom: 5%;
 }
 .card.large .card-image {
 	height: 230px;
